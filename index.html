@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nash Nauri | AgriTech & AI Engineer</title>
+  <meta name="description" content="Portfolio of Nash Nauri — AgriTech innovator, AI engineer, and fruit disease recognition specialist building the future of precision agriculture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── DYNAMIC BACKGROUND ──────────────────────────────── -->
+  <div class="bg-cosmic-container">
+    <div id="stars-container"></div>
+    <img src="cosmic_v2.png" id="bg-cosmic" alt="Cosmic Background" />
+  </div>
+
+  <!-- ── PORTFOLIO ─────────────────────── -->
+  <div id="portfolio" class="portfolio">
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">Nash<span class="accent">.</span>dev</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="https://github.com/riyo3015-lang" target="_blank" class="nav-social" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nash-nauri-eran-9463582b1/" target="_blank" class="nav-social" style="width: auto; padding: 0 15px; gap: 8px;">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.002-4.125 2.062 2.062 0 01-.002 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orbs">
+        <div class="h-orb h-orb-1"></div>
+        <div class="h-orb h-orb-2"></div>
+        <div class="h-orb h-orb-3"></div>
+      </div>
+      <div class="hero-content" style="flex: 1; text-align: center; padding-left: 0;">
+        <div class="hero-badge" style="margin: 0 auto 24px;">
+          <span class="badge-dot pulse"></span>
+          Final Year BCA (AI) · Open to Opportunities
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Hi, I'm</span>
+          <span class="title-name">Nash Nauri</span>
+        </h1>
+        <div class="hero-tagline" style="justify-content: center;">
+          <span class="tagline-static">I build</span>
+          <span class="tagline-rotating" id="tagline-rotating">AI-powered AgriTech</span>
+        </div>
+        <p class="hero-desc" style="margin: 0 auto 40px;">
+          Final-year BCA (AI) student from Bangalore, passionate about building intelligent solutions 
+          for precision agriculture, disease detection, and sustainable farming systems.
+        </p>
+        <div class="hero-cta" style="justify-content: center;">
+          <a href="#projects" class="cta-primary">View My Work <span>↓</span></a>
+          <a href="#contact" class="cta-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-stats" style="justify-content: center;">
+          <div class="stat">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">95%</span>
+            <span class="stat-label">Model Accuracy</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll down</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-tag">About Me</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title">AI Engineer <span class="accent">&</span> AgriTech Specialist</h2>
+            <p class="about-bio" style="color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.8; margin-bottom: 28px;">
+              I'm <strong style="color: #00ff88;">Nash Nauri</strong>, a final-year <strong style="color: #00ff88;">BCA (Artificial Intelligence)</strong> student based in <strong style="color: #00ff88;">Bangalore, India</strong>. 
+              I'm passionate about building technology that makes a real-world difference — especially at the intersection of <em>AI and agriculture</em>.
+            </p>
+            <p class="about-bio" style="color: rgba(255,255,255,0.7); font-size: 0.98rem; line-height: 1.8; margin-bottom: 28px;">
+              Over the past 3+ years I've immersed myself in deep learning, computer vision, and full-stack AI development. 
+              My flagship project, <strong style="color: rgba(255,255,255,0.9);">AgriTech Pro</strong>, uses CNN-based image classification to detect fruit crop diseases with ~95% accuracy — 
+              helping farmers catch infections early and protect their livelihoods.
+            </p>
+            <p class="about-bio" style="color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.8; margin-bottom: 32px;">
+              When I'm not training models or writing Python, you'll find me exploring new research papers, 
+              contributing to open-source projects, or brainstorming the next thing I want to build. 
+              I'm currently seeking internship and full-time roles where I can apply AI to meaningful problems.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="hi-icon">🎓</span>
+                <div>
+                  <strong>Education</strong>
+                  <span>BCA (AI) · Final Year · Bangalore, India</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">⚡</span>
+                <div>
+                  <strong>Core Stack</strong>
+                  <span>Python · TensorFlow · PyTorch · OpenCV · Streamlit</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">🎯</span>
+                <div>
+                  <strong>Specialization</strong>
+                  <span>Computer Vision · Fruit Disease Recognition · Farm Analytics</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">🚀</span>
+                <div>
+                  <strong>Mission</strong>
+                  <span>Applying AI to solve real-world agricultural challenges at scale.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hi-icon">💡</span>
+                <div>
+                  <strong>Interests</strong>
+                  <span>Deep Learning · Research Papers · Open-Source · Startups</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-card-wrap">
+            <div class="about-card glass-card">
+              <div class="about-avatar">NN</div>
+              <div class="about-name">Nash Nauri</div>
+              <div class="about-role">BCA (AI) · Final Year</div>
+              <div style="color: rgba(255,255,255,0.5); font-size: 0.82rem; margin-top: 4px;">📍 Bangalore, India</div>
+              <div class="about-tags" style="margin-top: 16px;">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Docker</span>
+              </div>
+              <div class="about-links">
+                <a href="https://github.com/riyo3015-lang" target="_blank" class="alink" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/nash-nauri-eran-9463582b1/" target="_blank" class="alink" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.002-4.125 2.062 2.062 0 01-.002 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-tag">Technical Skills</div>
+        <h2 class="section-title">My <span class="accent">Toolkit</span></h2>
+        <div class="skills-grid">
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-icon">🐍</div>
+            <h3>Languages &amp; Web</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span>Python</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:95%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>HTML</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:90%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>CSS</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:85%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:78%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-icon">🔥</div>
+            <h3>Backend &amp; Database</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span>Firebase</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:88%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Flask / FastAPI</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:82%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>SQL / SQLite</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:80%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Streamlit</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:90%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-icon">🤖</div>
+            <h3>AI &amp; Machine Learning</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span>TensorFlow / Keras</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:92%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>OpenCV</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:85%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Pandas / NumPy</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:88%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Data Visualization</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:84%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Tools &amp; Platforms</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span>Git / GitHub</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:90%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>VS Code</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:92%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Linux / Terminal</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:75%"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Google Cloud</span>
+                <div class="skill-bar"><div class="skill-fill" style="--p:70%"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-tag">Work</div>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters">
+          <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+          <button class="filter-btn" onclick="filterProjects('agritech', this)">AgriTech</button>
+          <button class="filter-btn" onclick="filterProjects('ai', this)">AI / ML</button>
+          <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Featured: AgriTech Pro -->
+          <div class="project-card project-featured glass-card" data-cat="agritech ai">
+            <div class="project-badge">⭐ Featured Project</div>
+            <h3 class="project-title">AgriTech Pro — Fruit Disease Recognition</h3>
+            <p class="project-desc" style="margin-bottom: 12px;">
+              An AI-powered precision farming tool that uses deep CNN models to identify and diagnose diseases in fruit crops from images. 
+              Farmers can upload or capture a photo and receive an instant diagnosis with ~95% accuracy, along with treatment recommendations 
+              and yield impact analysis.
+            </p>
+            <div class="project-desc" style="color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+              <strong style="color: rgba(255,255,255,0.75);">Key Features:</strong> Real-time disease classification · Visual reference comparisons · 
+              Treatment & prevention suggestions · Farm analytics dashboard · Disease progression timeline
+            </div>
+            <div class="project-tech-row">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+            <div class="project-links-row" style="margin-top: 20px;">
+              <a href="https://github.com/riyo3015-lang" target="_blank" class="proj-link">GitHub Repo</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Crop Health Dashboard -->
+          <div class="project-card glass-card" data-cat="agritech web">
+            <h3 class="project-title">Crop Health Dashboard</h3>
+            <p class="project-desc">
+              An interactive analytics dashboard for monitoring crop health metrics, visualizing disease trends across seasons, 
+              and tracking economic yield impact — built with Streamlit and Plotly.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Plotly</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="project-links-row" style="margin-top: 20px;">
+              <a href="https://github.com/riyo3015-lang" target="_blank" class="proj-link">GitHub Repo</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Image Classification API -->
+          <div class="project-card glass-card" data-cat="ai web">
+            <h3 class="project-title">Image Classification REST API</h3>
+            <p class="project-desc">
+              A production-ready REST API built with Flask & FastAPI that serves trained CNN models for real-time image classification. 
+              Features JWT authentication, rate limiting, and Docker-based deployment.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+            <div class="project-links-row" style="margin-top: 20px;">
+              <a href="https://github.com/riyo3015-lang" target="_blank" class="proj-link">GitHub Repo</a>
+            </div>
+          </div>
+
+          <!-- Project 4: Leaf Segmentation -->
+          <div class="project-card glass-card" data-cat="ai agritech">
+            <h3 class="project-title">Leaf Segmentation & Analysis</h3>
+            <p class="project-desc">
+              Computer vision pipeline using OpenCV and U-Net for segmenting diseased leaf regions, calculating infection area percentage, 
+              and generating severity reports for agricultural researchers.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+            <div class="project-links-row" style="margin-top: 20px;">
+              <a href="https://github.com/riyo3015-lang" target="_blank" class="proj-link">GitHub Repo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container" style="max-width: 600px;">
+        <div class="section-tag" style="text-align: center;">Get In Touch</div>
+        <h2 class="section-title" style="text-align: center;">Let's <span class="accent">Collaborate</span></h2>
+        <p class="contact-intro" style="text-align: center;">
+          Have a project in mind? I'd love to hear from you.
+        </p>
+        <form class="contact-form glass-card" id="contact-form" onsubmit="handleContact(event)">
+          <div class="input-group">
+            <label for="c-name">Name</label>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input type="text" id="c-name" placeholder="Your name" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="c-email">Email</label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input type="email" id="c-email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="c-message">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <textarea id="c-message" placeholder="Tell me about your project..." rows="4" required></textarea>
+            </div>
+          </div>
+          <div class="contact-success hidden" id="contact-success">✅ Message sent! I'll get back to you soon.</div>
+          <button type="submit" class="auth-btn">
+            <span>Send Message</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container" style="text-align: center;">
+        <div class="footer-social">
+          <a href="mailto:riyo3015@gmail.com" class="footer-social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nash-nauri-eran-9463582b1/" target="_blank" class="footer-social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.002-4.125 2.062 2.062 0 01-.002 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/riyo3015-lang" target="_blank" class="footer-social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="footer-logo" style="margin-top: 30px;">Nash<span class="accent">.</span>dev</div>
+        <p class="footer-text" style="margin-top: 10px;">© 2025 Nash Nauri · Built with 💜</p>
+      </div>
+    </footer>
+
+  </div><!-- /portfolio -->
+
+  <script src="script.js"></script>
+</body>
+</html>
